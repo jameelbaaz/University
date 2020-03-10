@@ -13,7 +13,7 @@
         </div>
 
     <div class="generic-content">
-    <?php the_content(); ?>
+    <?php the_field('main_body_content'); ?>
 
     <?php
         
@@ -77,7 +77,7 @@
             echo '<h3 class="headline headline--medium">Upcoming ' .get_the_title().' Events</h3>';
             
             while($homepageEvents->have_posts()):$homepageEvents->the_post();
-              get_template_part('template-parts/event');
+              get_template_part('template-parts/content-event');
             endwhile;}?>
             
     </div>
