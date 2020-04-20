@@ -33,7 +33,7 @@
                 )
             ));
             while($homepageEvents->have_posts()):$homepageEvents->the_post();
-                get_template_part('template-parts/event');
+                get_template_part('template-parts/content-event');
             endwhile; ?>
         <p class="t-center no-margin"><a href="<?php echo get_post_type_archive_link('event') ?>" class="btn btn--blue">View All Events</a></p>
 
@@ -50,9 +50,8 @@
                 'posts_per_page' => 2,
               ));
 
-          while($homepagePosts->have_posts()):$homepagePosts->the_post();?>
-
-           
+        while($homepagePosts->have_posts()):$homepagePosts->the_post();?>
+ 
         <div class="event-summary">
           <a class="event-summary__date event-summary__date--beige t-center" href="<?php the_permalink(); ?>">
             <span class="event-summary__month"><?php the_time('M') ?></span>

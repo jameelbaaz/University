@@ -29,7 +29,7 @@
        ));
 
       while($pastEvents->have_posts()) :  $pastEvents->the_post();
-      get_template_part('template-parts/event');
+      get_template_part('template-parts/content','event');
        endwhile; 
           echo paginate_links(array(
             'total'=>$pastEvents->max_num_pages
