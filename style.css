@@ -936,7 +936,7 @@ p, li {
 }
 
 .search_web{
- padding-top: 20px;
+ /* padding-top: 20px; */
   text-align: center;
   font-size: 18px;
 }
