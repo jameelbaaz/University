@@ -931,6 +931,16 @@ p, li {
   text-decoration: underline;
 }
 
+.pg_not_found{
+  text-align: center;
+}
+
+.search_web{
+ padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
 
 .one-half,
 .one-third,
@@ -2591,3 +2601,5 @@ margin: 20px 0;
     border-bottom: none;
     margin-bottom: 0;
   }
+
+

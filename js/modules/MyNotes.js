@@ -14,8 +14,6 @@ class MyNotes{
 
     // Methods will go here
    
-
-
     editNote(e){
         var thisNote = $(e.target).parents("li");
         if(thisNote.data("state") == 'editable'){
